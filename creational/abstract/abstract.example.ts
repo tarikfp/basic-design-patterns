@@ -4,21 +4,21 @@ interface CreateObservationFactory {
 }
 
 class CreateObservationFactoryOne implements CreateObservationFactory {
-  createHeartRateObservation(): HeartRateObservationOne {
+  createHeartRateObservation(): IHeartRateObservation {
     return new HeartRateObservationOne();
   }
 
-  createBloodPressureObservation(): BloodPressureObservationOne {
+  createBloodPressureObservation(): IBloodPressureObservation {
     return new BloodPressureObservationOne();
   }
 }
 
 class CreateObservationFactoryTwo implements CreateObservationFactory {
-  createHeartRateObservation(): HeartRateObservationOne {
+  createHeartRateObservation(): IHeartRateObservation {
     return new HeartRateObservationOne();
   }
 
-  createBloodPressureObservation(): BloodPressureObservationOne {
+  createBloodPressureObservation(): IBloodPressureObservation {
     return new BloodPressureObservationTwo();
   }
 }
